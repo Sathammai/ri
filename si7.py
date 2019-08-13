@@ -1,10 +1,7 @@
-num = 16
-
-if num < 0:
-   print(" positive number")
-else:
-   sum = 0
-   while(num > 0):
-       sum += num
-       num -= 1
-   print(" sum is",sum)
+def KLargest(arr, k): 
+    arr.sort(reverse = True) 
+    for i in range(k): 
+        print (arr[i], end =" ")  
+arr = [1, 23, 12, 9, 30, 2, 50]
+K = 3
+KLargest(arr, k)
